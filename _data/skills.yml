@@ -12,7 +12,8 @@
     descr: python   
     xp: 4
 -   id: javascript
-    descr: javascript   
+    descr: javascript 
+    color: blue  
     xp: 3
 -   id: css
     descr: css    
