@@ -2,9 +2,9 @@
     title: Baxter the Laundry Assistant    
     img: 1.jpg
     width: 8
-    height: 2
+    height: 4
 -   id: 2
-    title: Some other project I did 
+    title: Object Tracking  
     img: 2.jpg
-    width: 4
-    height: 2
+    width: 8
+    height: 4
