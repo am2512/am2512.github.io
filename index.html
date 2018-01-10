@@ -21,43 +21,8 @@ layout: default
   </div>
   
   
-   <div class="col col-9">
-   <div class="block glass"  style="background-image:url(assets/1.jpg)">
-    </div>
-  
-  <div class="col col-9">
-    {% for post in site.posts %}
-      <div class="col col-{{post.width}}">
-        <div class="block {{post.color}}">
-            <div class="block-body height-{{post.height}}">
-                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+      
 
-                <h2>
-                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-      
-       
-    {% endfor %}
-    </div>
-  
-    
-      
-    <div class="col col-12">
-    {% for port in site.data.portfolio %}
-      <div class="col col-{{port.width}}">
-        <div class="block" style="background-image:url(assets/{{port.img}})">
-            <div class="block-body height-{{port.height}}">
-                <h2 class="align-bottom-right">
-                  {{ port.title }}
-                </h2>
-            </div>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
     <div class="col col-3">
         <div class="block glass">
             <div class="block-body">
