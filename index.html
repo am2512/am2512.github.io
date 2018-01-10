@@ -33,16 +33,21 @@ layout: default
             </div>
         </div>
       </div>
-      </div>
+      
       
        
-       <div class="block glass"  style="background-image:url(assets/1.jpg)">
+       
           
       
           
           
     {% endfor %}
     </div>
+    <div class="col col-9">
+   <div class="block glass"  style="background-image:url(assets/1.jpg)">
+    </div>
+    </div>
+    
     <div class="col col-12">
     {% for port in site.data.portfolio %}
       <div class="col col-{{port.width}}">
