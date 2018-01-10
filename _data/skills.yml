@@ -23,3 +23,6 @@
 -   id: mySQL
     descr: mySQL   
     xp: 4 
+-   id: git
+    descr: git  
+    xp: 4
