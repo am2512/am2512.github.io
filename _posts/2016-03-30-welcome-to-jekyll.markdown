@@ -7,22 +7,9 @@ height:  1
 date:   2016-03-30 11:31:49 +0200
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I was part of a five member group that worked with the Baxter robot from Rethink Robotics for the ME 495: Embedded Systems in Robotics final project.
 
-Jekyll also offers powerful support for code snippets:
+Our goal was to get Baxter to thread and unthread the lid of a Tide bottle. We wrote custom ROS services, subscribers, publishers, and nodes as part of this project. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+AR tags were used for identification of the Tide bottle lid. The AR tags provided very accurate information about the pose and orientation of the lid, and then we used the IK Solver Service to obtain the joint angles for Baxter's arm. The Github repository for the group project, along with the code, can be found [here](https://github.com/am2512/baxter_final_project).
