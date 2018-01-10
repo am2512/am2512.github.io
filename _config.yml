@@ -9,7 +9,7 @@
 title: My Portfolio
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jannik Richter, jannik811@gmail.com
+  Ahalya Mandana, ahalyamandana2018@u.northwestern.edu
 baseurl: "/am2512.github.io" # the subpath of your site, e.g. /blog
 url: "http://am2512.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
