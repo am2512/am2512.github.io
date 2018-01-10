@@ -23,18 +23,18 @@ layout: default
   
    <div class="col col-12">
    
-       <div class="col col-9">
+       <div class="col col-3">
     {% for post in site.posts %}
-      <div class="col col-{{post.width}}">
+      
         <div class="block {{post.color}}">
-            <div class="block-body height-{{post.height}}">
+            
                 <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                 <h2>
                   <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
-            </div>
-        </div>
+            
+        
       </div>
     {% endfor %}
     </div>
