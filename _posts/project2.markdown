@@ -1,32 +1,23 @@
 ---
 layout: post
-title:  "Baxter as a Laundry Assistant"
+title:  "Object Tracking and Servo Motor Control"
 color:  blue
 height:  1
-date:   2017-11-07 11:31:49 +0200
+date:   2017-09-05 11:31:49 +0200
 categories: jekyll update
 ---
 
-I was part of a five member group that worked with the Baxter robot from Rethink Robotics for the ME 495: Embedded Systems in Robotics final project.
-<br>
 <br>
 
-Our goal was to get Baxter to thread and unthread the lid of a Tide bottle. We wrote custom ROS services, subscribers, publishers, and nodes as part of this project. 
+The goal of this project was to track a red ball that is front of the webcam. The webcam was fixed to a servo motor mechanism. As the ball moved, the servo motors would also move to track the ball continuously.
 <br>
-<br>
-AR tags were used for identification of the Tide bottle lid. The AR tags provided very accurate information about the pose and orientation of the lid, and then we used the IK Solver Service to obtain the joint angles for Baxter's arm. The Github repository for the group project, along with the code, can be found <i><b>[here](https://github.com/am2512/baxter_final_project).</b></i>
-
 <br>
 
 Skills involved in the project:
 <ul>
-      <li> ROS </li>
-      <li> Inverse Kinematics </li>
-      <li> AR Tag Tracking </li>
-      <li> Python </li>
       <li> OpenCV </li>
+      <li> Python </li>
     </ul>
 <br>
 
-<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
