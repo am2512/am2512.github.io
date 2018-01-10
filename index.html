@@ -19,19 +19,7 @@ layout: default
         </div>
       </div>
   </div>
-  <div class="col col-12">
-    {% for port in site.data.portfolio %}
-      <div class="col col-{{port.width}}">
-        <div class="block" style="background-image:url(assets/{{port.img}})">
-            <div class="block-body height-{{port.height}}">
-                <h2 class="align-bottom-right">
-                  {{ port.title }}
-                </h2>
-            </div>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
+  
   <div class="col col-9">
     {% for post in site.posts %}
       <div class="col col-{{post.width}}">
@@ -41,6 +29,19 @@ layout: default
 
                 <h2>
                   <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+    <div class="col col-12">
+    {% for port in site.data.portfolio %}
+      <div class="col col-{{port.width}}">
+        <div class="block" style="background-image:url(assets/{{port.img}})">
+            <div class="block-body height-{{port.height}}">
+                <h2 class="align-bottom-right">
+                  {{ port.title }}
                 </h2>
             </div>
         </div>

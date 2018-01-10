@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simulation of somersaults on a trampoline using Mathematica"
+title:  "Baxter as a Laundry Assistant"
 color:  blue
 width:   4 
 height:  1
