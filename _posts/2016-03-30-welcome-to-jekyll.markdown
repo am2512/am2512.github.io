@@ -2,6 +2,7 @@
 layout: post
 title:  "Baxter as a Laundry Assistant"
 color:  blue
+height:  1
 date:   2017-11-07 11:31:49 +0200
 categories: jekyll update
 ---
