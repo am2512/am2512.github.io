@@ -49,6 +49,34 @@ layout: default
   </div>
   
   
+  
+  
+     <div class="col col-12">
+       <div class="col col-3">
+    {% for post in site.post2 %}
+      
+        <div class="block {{post.color}}">
+            <div class="block-body height-{{post.height}}">
+                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h2>
+                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </div>
+       
+      </div>
+    {% endfor %}
+    </div>
+      
+      
+      
+      <div class="col col-9">
+        <div class="block glass"  style="background-image:url(assets/2.jpg)">
+          </div>
+      </div>
+  </div>
+  
+  
 
 
 

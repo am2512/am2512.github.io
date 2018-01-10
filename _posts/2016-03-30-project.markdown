@@ -1,30 +1,21 @@
 ---
 layout: post
 title:  "Baxter as a Laundry Assistant"
-color:  blue
+color:  red
 height:  1
 date:   2017-11-07 11:31:49 +0200
 categories: jekyll update
 ---
 
-I was part of a five member group that worked with the Baxter robot from Rethink Robotics for the ME 495: Embedded Systems in Robotics final project.
+I was a member of a group that worked on an Object Tracking project. The object was a red ball, and using a webcam and OpenCV, the ball was tracked. This information was passed onto a servo motor. Depending on the motion of the ball, the servo motor moved accordingly.
 <br>
-<br>
-
-Our goal was to get Baxter to thread and unthread the lid of a Tide bottle. We wrote custom ROS services, subscribers, publishers, and nodes as part of this project. 
-<br>
-<br>
-AR tags were used for identification of the Tide bottle lid. The AR tags provided very accurate information about the pose and orientation of the lid, and then we used the IK Solver Service to obtain the joint angles for Baxter's arm. The Github repository for the group project, along with the code, can be found <i><b>[here](https://github.com/am2512/baxter_final_project).</b></i>
-
 <br>
 
 Skills involved in the project:
 <ul>
-      <li> ROS </li>
-      <li> Inverse Kinematics </li>
-      <li> AR Tag Tracking </li>
-      <li> Python </li>
       <li> OpenCV </li>
+      <li> Python </li>
+     
     </ul>
 <br>
 
