@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Simulation of somersaults on a trampoline using Mathematica"
-color:  red
+color:  blue
 width:   4 
 height:  1
 date:   2016-03-30 11:31:49 +0200
