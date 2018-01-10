@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-color:  teal
-width:   6 
+title:  "Simulation of somersaults on a trampoline using Mathematica"
+color:  red
+width:   4 
 height:  1
 date:   2016-03-30 11:31:49 +0200
 categories: jekyll update
