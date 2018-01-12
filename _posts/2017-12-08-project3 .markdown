@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Simulation of a Backward Somersault on a Trampoline using Mathematica"
+color:  teal
+height:  1
+date:   2017-12-08 11:31:49 +0200
+categories: jekyll update
+---
+
+For the final project of ME 314: Theory of Machiine Dynamics, we had to simulate dynamics of a system in Mathematica. I chose to simulate a person doing a backward somersault on a trampoline. 
+<br>
+<br>
+
+Skills involved in the project:
+<ul>
+      <li> OpenCV </li>
+      <li> Python </li>
+     
+    </ul>
+<br>
+
+<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
