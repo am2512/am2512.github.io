@@ -2,12 +2,12 @@
 layout: post
 title:  "Simulation of KUKA youBot in V-REP"
 color:  orange
-height:  1
+height:  2
 date:   2017-12-08 11:31:49 +0200
 categories: jekyll update
 ---
 
-For the final project of ME 314: Theory of Machine Dynamics, we had to simulate dynamics of a system in Mathematica. I chose to simulate a person doing a backward somersault on a trampoline. 
+For the final project of ME 495: Robotic Manipulation, we had to simulate the motion of the KUKA youBot using V-REP. 
 <br>
 <br>
 
@@ -15,7 +15,7 @@ For the final project of ME 314: Theory of Machine Dynamics, we had to simulate 
 Skills involved in the project:
 <ul>
       <li> Mathematica </li>
-      <li> Knowledge of Lagrangian Dynamics </li>
+      <li> V-REP </li>
      
     </ul>
 <br>
