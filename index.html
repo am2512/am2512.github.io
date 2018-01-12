@@ -26,7 +26,7 @@ layout: default
    <div class="col col-12">
        <div class="col col-5">
        
-    {% if site.posts.title contains 'Motor' %}
+    {% for post in site.projects.posts %}
       
         <div class="block {{post.color}}">
             <div class="block-body height-{{post.height}}">
@@ -38,7 +38,7 @@ layout: default
             </div>
        
       </div>
-    {% endif %}
+    {% endfor %}
     </div>
       
       
