@@ -25,7 +25,7 @@ layout: default
   
    <div class="col col-12">
        <div class="col col-5">
-    {% for site.posts.2017-09-05-project2 %}
+    {% if post == site.posts.2017-09-05 %}
       
         <div class="block {{post.color}}">
             <div class="block-body height-{{post.height}}">
@@ -37,7 +37,7 @@ layout: default
             </div>
        
       </div>
-    {% endfor %}
+    {% endif %}
     </div>
       
       
