@@ -26,3 +26,7 @@
 -   id: git
     descr: git  
     xp: 4
+    id: css
+    descr: CSS  
+    xp: 3
+    
