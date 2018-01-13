@@ -2,7 +2,7 @@
 layout: post
 title:  "Simulation of KUKA youBot in V-REP"
 color:  orange
-height:  2
+height:  1
 date:   2017-12-08 11:31:49 +0200
 categories: jekyll update
 ---
@@ -20,5 +20,4 @@ Skills involved in the project:
     </ul>
 <br>
 
-<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
