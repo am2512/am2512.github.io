@@ -16,6 +16,7 @@ Skills involved in the project:
 <ul>
       <li> Mathematica </li>
       <li> V-REP </li>
+      <li> Knowledge of kinematics </li>
      
     </ul>
 <br>

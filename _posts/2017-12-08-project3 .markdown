@@ -10,7 +10,11 @@ categories: jekyll update
 For the final project of ME 314: Theory of Machine Dynamics, we had to simulate dynamics of a system in Mathematica. I chose to simulate a person doing a backward somersault on a trampoline. 
 <br>
 <br>
-
+This Mathematica simulation demonstrates the motion of a person doing a backward somersault
+on a trampoline. The simulation is in two dimensions, and since the problem is quite complex,
+the human body is represented by three links in the simulation. The red link represents the
+upper body, the blue link represents the upper leg section, and the blue link represents the
+lower leg section of the body. The trampoline is the green structure at the bottom of the image.
 
 Skills involved in the project:
 <ul>
@@ -19,6 +23,6 @@ Skills involved in the project:
      
     </ul>
 <br>
+<img src="assets/314.jpg">
 
-<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
