@@ -15,7 +15,7 @@ on a trampoline. The simulation is in two dimensions, and since the problem is q
 the human body is represented by three links in the simulation. The red link represents the
 upper body, the blue link represents the upper leg section, and the blue link represents the
 lower leg section of the body. The trampoline is the green structure at the bottom of the image.
-
+<br>
 Skills involved in the project:
 <ul>
       <li> Mathematica </li>
@@ -23,6 +23,6 @@ Skills involved in the project:
      
     </ul>
 <br>
-![MarkView](https://github.com/am2512/am2512.github.io/blob/master/assets/314.jpg)
+![image3](assets/314.jpg){:class="img-responsive"}
 
 
