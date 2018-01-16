@@ -26,6 +26,6 @@ Skills involved in the project:
 ![image3](/assets/314.jpg){:class="img-responsive"}
 &nbsp;&nbsp;&nbsp;
 
-![image3](/assets/3142.jpg){:class="img-responsive"}
+![image3_1](/assets/3142.jpg){:class="img-responsive"}
 
 
