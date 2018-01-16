@@ -23,6 +23,6 @@ Skills involved in the project:
      
     </ul>
 <br>
-![image3](assets/314.jpg){:class="img-responsive"}
+![image3](/assets/314.jpg){:class="img-responsive"}
 
 
