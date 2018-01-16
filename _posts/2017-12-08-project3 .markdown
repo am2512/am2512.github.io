@@ -23,6 +23,6 @@ Skills involved in the project:
      
     </ul>
 <br>
-<img src="assets/314.jpg">
+![MarkView](https://github.com/am2512/am2512.github.io/blob/master/assets/314.jpg)
 
 
