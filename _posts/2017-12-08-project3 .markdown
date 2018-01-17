@@ -23,9 +23,19 @@ Skills involved in the project:
      
     </ul>
 <br>
+
+
+
+<table style="width:100%">
+  
+  <tr>
+   
+ 
+  
+ 
 ![image3](/assets/314.jpg){:class="img-responsive"}
-&nbsp;&nbsp;&nbsp;
+
 
 ![image3_1](/assets/3142.jpg){:class="img-responsive"}
-
-
+ </tr>
+</table>
