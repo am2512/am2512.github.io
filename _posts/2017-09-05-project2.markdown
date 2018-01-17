@@ -11,7 +11,9 @@ categories: jekyll update
 
 The goal of this project was to track a red ball that is front of the webcam. The webcam was fixed to a servo motor mechanism. As the ball moved, the servo motors would also move to track the ball continuously.
 <br>
-
+![hackathon1](/assets/hackathon1.jpg){:class="img-responsive"}
+<br>
+![hackathon2](/assets/hackathon2.jpg){:class="img-responsive"}
 <br>
 
 Skills involved in the project:

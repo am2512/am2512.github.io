@@ -21,22 +21,9 @@ Skills involved in the project:
       <li> Mathematica </li>
       <li> Knowledge of Lagrangian Dynamics </li>
      
-    </ul>
-<br>
-
-
-
-<table style="width:100%">
-  
-  <tr>
-   
+</ul>
+<br>  
  
-  
- 
-<td>![image3](/assets/314.jpg){:class="img-responsive"}
-</td>
-<td>
-![image3_1](/assets/3142.jpg){:class="img-responsive"}
-</td> 
- </tr>
-</table>
+![image3](/assets/314.jpg){:class="img-responsive"}
+
+The GitHub repository for the project can be found <i><a href="https://github.com/am2512/me314_final_project">here</a></i>.
