@@ -3,7 +3,6 @@
     xp: 5
 -   id: mathematica
     descr: mathematica
-    color: teal
     xp: 4
 -   id: c
     descr: c   
@@ -26,7 +25,11 @@
 -   id: git
     descr: git  
     xp: 4
-    id: css
+-   id: css
     descr: CSS  
     xp: 3
+-   id: assembly language
+    descr: assembly language    
+    xp: 3
+    
     

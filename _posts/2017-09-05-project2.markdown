@@ -11,11 +11,17 @@ categories: jekyll update
 
 The goal of this project was to track a red ball that is front of the webcam. The webcam was fixed to a servo motor mechanism. As the ball moved, the servo motors would also move to track the ball continuously.
 <br>
+<div>
 ![hackathon1](/assets/hackathon1.jpg){:class="img-responsive"}
-<br> The image below shows the red ball being tracked on the laptop screen. This was done with OpenCV, using contour detection. We used the information about the position of the ball to control the motion of the servo motor, using Python. 
+</div>
+<br> 
+<div>
 ![hackathon2](/assets/hackathon2.jpg){:class="img-responsive"}
+</div>
 <br>
 
+The image above shows the red ball being tracked on the laptop screen. This was done with OpenCV, using contour detection. We used the information about the position of the ball to control the motion of the servo motor, using Python. 
+<br>
 Skills involved in the project:
 <ul>
       <li> OpenCV </li>
