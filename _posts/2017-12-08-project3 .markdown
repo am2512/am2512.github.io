@@ -33,9 +33,10 @@ Skills involved in the project:
  
   
  
-![image3](/assets/314.jpg){:class="img-responsive"}
-
-
+<td>![image3](/assets/314.jpg){:class="img-responsive"}
+</td>
+<td>
 ![image3_1](/assets/3142.jpg){:class="img-responsive"}
+</td> 
  </tr>
 </table>
