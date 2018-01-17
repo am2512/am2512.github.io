@@ -7,14 +7,21 @@ date:   2017-12-07 11:31:49 +0200
 categories: jekyll update
 ---
 
-I was a member of a group that worked on an Object Tracking project. The object was a red ball, and using a webcam and OpenCV, the ball was tracked. This information was passed onto a servo motor. Depending on the motion of the ball, the servo motor moved accordingly.
+This project was the final project for ME 495: Embedded Systems in Robotics. The main goal of our project was to get the Baxter robot from <i><a href="http://www.rethinkrobotics.com/baxter/">Rethink Robotics</a></i> to thread/unthread the lid of a Tide bottle. 
 <br>
+We used AR tags to detect the quaternion data of the lid. This was used as an input for Baxter's IK (Inverse Kinematics) Solver Service. The IK Solver Service generated the required joint angles to reach the pose and orientation of the lid.  
+<br>
+We wrote custom nodes, services, publishers, and subscribers to achieve our final goal. 
 <br>
 
+The GitHub repository for the project can be found <i><a href="https://github.com/am2512/baxter_final_project">here</a></i>.
+<br>
 Skills involved in the project:
 <ul>
-      <li> OpenCV </li>
+      <li> ROS (Robotics Open Source) </li>
       <li> Python </li>
+      <li> Rviz </li>
+      <li> AR Tag Tracking</li>
      
     </ul>
 <br>
