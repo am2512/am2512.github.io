@@ -26,4 +26,4 @@ Skills involved in the project:
  
 ![image3](/assets/314.jpg){:class="img-responsive"}
 
-The GitHub repository for the project can be found <i><a href="https://github.com/am2512/me314_final_project">here</a></i>.
+The GitHub repository for the project can be found <u><a href="https://github.com/am2512/me314_final_project">here</a></u>.

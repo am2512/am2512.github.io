@@ -7,16 +7,14 @@ date:   2017-12-08 11:31:49 +0200
 categories: jekyll update
 ---
 
-For the final project of ME 495: Robotic Manipulation, we had to simulate the motion of the KUKA youBot using V-REP. This involved generating the angles for the wheels as well as the arm. 
+For the final project of ME 495: Robotic Manipulation, we had to simulate the motion of the KUKA youBot using V-REP. This involved continuously generating the joint angles for the arm, as well as the angles for the four wheels. 
 <br>
 <br>
-
-
 Skills involved in the project:
 <ul>
       <li> Mathematica </li>
       <li> V-REP </li>
-      <li> Knowledge of kinematics </li>
+      
      
     </ul>
 <br>
