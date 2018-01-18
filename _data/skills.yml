@@ -1,11 +1,8 @@
 -   id: matlab
     descr: MATLAB   
     xp: 5
--   id: mathematica
-    descr: mathematica
-    xp: 4
 -   id: c
-    descr: c   
+    descr: C   
     xp: 5
 -   id: html
     descr: HTML    
@@ -13,7 +10,7 @@
 -   id: javascript
     descr: javascript    
     xp: 2
--   id: python
+-   id: Python
     descr: python   
     xp: 4
 -   id: ROS
@@ -22,13 +19,16 @@
 -   id: mySQL
     descr: mySQL   
     xp: 4 
--   id: git
+-   id: Git
     descr: git  
     xp: 4
 -   id: css
     descr: CSS  
     xp: 3
--   id: assembly language
+-   id: Mathematica
+    descr: mathematica
+    xp: 4
+-   id: Assembly Language
     descr: assembly language    
     xp: 3
     
