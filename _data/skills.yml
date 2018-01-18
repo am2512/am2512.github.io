@@ -8,10 +8,10 @@
     descr: HTML    
     xp: 5
 -   id: javascript
-    descr: javascript    
+    descr: JavaScript    
     xp: 2
 -   id: Python
-    descr: python   
+    descr: Python   
     xp: 4
 -   id: ROS
     descr: ROS    
@@ -20,16 +20,16 @@
     descr: mySQL   
     xp: 4 
 -   id: Git
-    descr: git  
+    descr: Git  
     xp: 4
 -   id: css
     descr: CSS  
     xp: 3
 -   id: Mathematica
-    descr: mathematica
+    descr: Mathematica
     xp: 4
 -   id: Assembly Language
-    descr: assembly language    
+    descr: Assembly Language    
     xp: 3
     
     
