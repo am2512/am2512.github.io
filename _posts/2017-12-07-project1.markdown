@@ -18,7 +18,7 @@ The GitHub repository for the project can be found <u><a href="https://github.co
 <br>
 Skills involved in the project:
 <ul>
-      <li> ROS (Robotics Open Source) </li>
+      <li> ROS (Robot Operating System) </li>
       <li> Python </li>
       <li> Rviz </li>
       <li> AR Tag Tracking</li>
