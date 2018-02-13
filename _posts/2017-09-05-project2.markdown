@@ -22,7 +22,7 @@ The goal of this project was to track a red ball that is front of the webcam. Th
 
 The image above shows the red ball being tracked on the laptop screen. This was done with OpenCV, using contour detection. We used the information about the position of the ball to control the motion of the servo motor, using Python. 
 <br><br>
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNUMSinRobotics%2Fvideos%2F1517050035029534%2F&show_text=0&width=560" width="1120" height="630" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNUMSinRobotics%2Fvideos%2F1517050035029534%2F&show_text=0&width=560" width="1008" height="567" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 <br><br>
 Skills involved in the project:
 <ul>
