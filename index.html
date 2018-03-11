@@ -1,92 +1,59 @@
 ---
 layout: default
+title: Jekyll Themes
 ---
 
-<div class="home">
-
-
- <div class="col col-12">
-      <div class="col col-3">
-          <div class="block glass"  style="background-image:url(assets/avatar.jpg)">
-          </div>
-      </div>
-      <div class="col col-9">
-        <div class="block glass">
-            <div class="block-body">
-                <h2>Ahalya Mandana</h2>
-                <p class="grey-text">I'm currently a student in the M.S. in Robotics program at Northwestern University. My undergraduate background is electrical and electronics engineering. I'm extremely passionate about using robotics in fields that make a positive difference in people's lives. I hope to explore the various branches of robotics, while simultaneously acquiring skills in articial intelligence, mechatronics, robotic manipulation and fundamental mechanical fields like machine dynamics.</p>
-            </div>
-        </div>
-      </div>
-  </div>
-  
-  
-  
-  
-   <div class="col col-12">
-       <div class="col col-3">
-       
-    {% for post in site.posts %}
-      
-        <div class="block {{post.color}}">
-            <div class="block-body height-{{post.height}}">
-                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2>
-                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </div>
-       
-      </div>
-    {% endfor %}
-    </div>
-      
-      
-      
-      <div class="col col-9">
-        <div class="block glass"  style="background-image:url(assets/3.jpg)">
-          </div>
-           
-        <div class="block glass"  style="background-image:url(assets/4.jpg)">
-          </div>
-           
-           
-           
-           <div class="block glass"  style="background-image:url(assets/1.jpg)">
-          </div>
-          <div class="block glass"  style="background-image:url(assets/2.jpg)">
-          </div>
-        
-      
-      </div>
-     
-     
-     
-    
-      <div class="col col-10">
-        <div class="block glass">
-            <div class="block-body">
-                <h2>Courses</h2>
-                <p class="grey-text">I'm currently in the second quarter of my graduate program. Last quarter, I took the following courses: Theory of Machine Dynamics, Embedded Systems in Robotics, Robotic Manipulation, and Introduction to Artificial Intelligence. In the current Winter quarter, I'm enrolled in Introduction to Mechatronics, Deep Learning Foundations, and Human-Computer Interaction.<br><br><h2>Contact Me</h2><p class="grey-text">GitHub profile: {% include icon-github.html %} <a href="https://github.com/am2512">github.com/am2512</a> <br> LinkedIn profile: <a href="https://in.linkedin.com/in/ahalyamandana">linkedin.com/in/ahalyamandana</a> <br>E-mail: ahalyamandana2018@u.northwestern.edu <br>Mobile: +1 773-807-6306.
-<br><a href="/resume/AhalyaMandana_CV.pdf">Download My Resume.</a> 
-                </p>
-                
-<br><h2>More About Me</h2><p class="grey-text">While I was a summer intern for Electronics For You (located in Bangalore, India), I wrote articles for the print and web editions of their magazine, on topics ranging from Bluetooth beacons to smart homes. The articles can be found <a href="https://electronicsofthings.com/author/ahalya/">here.</a><br>In my free time, I like to draw and write poetry. My art can be found on my <a href="https://www.behance.net/ahalyamandana">Behance profile</a>, and my poetry can found on the Facebook page, <a href="https://www.facebook.com/betterslashverse/">better/verse</a>.<br></p>
-            </div>
-        </div>
-      </div>
-  
-      <div class="col col-2">
-        <div class="block glass">
-            <div class="block-body">
-                <h3 class="margin-bot">Skills</h3>
-                {% for skill in site.data.skills %}
-                <span class="post-meta white-text">{{skill.descr}}</span>
-                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-      
-    
+<div class="gallery">
+	{% for post in paginator.posts %}
+		<div class="item">
+			<a class="item-inner" href="{{ post.url }}">
+				<div class="item-image"><img src="/thumbnails/{{ post.thumbnail }}"></div>
+				<div class="item-name">{{ post.title }}</div>
+			</a>
+		</div>
+	{% endfor %}
 </div>
+
+<!-- Pager -->
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="pagination">
+      <ul>
+        {% if paginator.previous_page %}
+
+          {% if paginator.previous_page == 1 %}
+            <li><a href="/">Prev</a></li>
+          {% else %}
+            <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+          {% endif %}
+
+        {% else %}
+          <li><span class="disabled">Prev</span></li>
+        {% endif %}
+
+        {% if paginator.page == 1 %}
+          <li><span class="active">1</span></li>
+        {% else %}
+          <li><a href="/">1</a></li>
+        {% endif %}
+
+        {% for count in (2..paginator.total_pages) %}
+
+          {% if count == paginator.page %}
+            <li><span class="active">{{ count }}</span></li>
+          {% else %}
+            <li><a href="/page{{ count }}">{{ count }}</a></li>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+        {% else %}
+          <li><span class="disabled">Next</span></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+
