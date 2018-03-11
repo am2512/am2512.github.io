@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Baxter as a Laundry Assistant"
+color:  red
+height:  1
+date:   2017-12-07 11:31:49 +0200
+categories: jekyll update
+---
+
+This project was the final project for ME 495: Embedded Systems in Robotics. The main goal of our project was to get the Baxter robot from <u><a href="http://www.rethinkrobotics.com/baxter/">Rethink Robotics</a></u> to thread/unthread the lid of a Tide bottle. 
+<br>
+We used AR tags to detect the quaternion data of the lid. This was used as an input for Baxter's IK (Inverse Kinematics) Solver Service. The IK Solver Service generated the required joint angles to reach the pose and orientation of the lid.  
+<br>
+We wrote custom nodes, services, publishers, and subscribers to achieve our final goal. 
+<br>
+
+The GitHub repository for the project can be found <u><a href="https://github.com/am2512/baxter_final_project">here</a></u>.
+<br>
+Skills involved in the project:
+<ul>
+      <li> ROS (Robot Operating System) </li>
+      <li> Python </li>
+      <li> Rviz </li>
+      <li> AR Tag Tracking</li>
+     
+    </ul>
+<br>
+
+<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

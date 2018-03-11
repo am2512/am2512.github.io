@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Object Tracking and Servo Motor Control"
+color:  blue
+height:  1
+date:   2017-09-05 11:31:49 +0200
+categories: jekyll update
+---
+
+<br>
+
+The goal of this group project was to track a red ball that is front of the webcam. The webcam was fixed to a servo motor mechanism. As the ball moved, the servo motors would also move to track the ball continuously. 
+<br><br>
+
+![hackathon1](/assets/hackathon1.jpg){:class="img-responsive"}
+
+<br> 
+
+![hackathon2](/assets/hackathon2.jpg){:class="img-responsive"}
+
+<br>
+
+The image above shows the red ball being tracked on the laptop screen. This was done with OpenCV, using contour detection. We used the information about the position of the ball to control the motion of the servo motor, using Python. A ROS publisher was used to publish the coordinates of the ball, and a ROS subscriber was used to subscribe to the raw video feed from the laptop's webcam. The video clip below shows the movement of the webcam as the ball is moved.
+<br><br>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNUMSinRobotics%2Fvideos%2F1517050035029534%2F&show_text=0&width=560" width="1008" height="567" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<br><br>
+Skills involved in the project:
+<ul>
+      <li> OpenCV </li>
+      <li> Python </li>
+      <li> ROS </li>
+    </ul>
+<br>
+
+
