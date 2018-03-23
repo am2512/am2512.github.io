@@ -207,7 +207,7 @@ body .demo-blog {
           order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+  background-color: #ed7e42;
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
@@ -513,8 +513,13 @@ body .demo-blog {
   z-index: 10;
 }
 .demo-blog .amazing .mdl-card__title {
-  background-color: #263238;
+  background-color: #dd563e;
 }
+
+.demo-blog .amazing1 .mdl-card__title {
+  background-color: #a09795;
+}
+
 .demo-blog .minilogo {
   width: 44px;
   height: 44px;
