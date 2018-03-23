@@ -69,7 +69,7 @@
         </div>
         <div class="demo-blog__posts mdl-grid">
           <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50" >
+            <div class="mdl-card__media3 mdl-color-text--grey-50" >
               <h3>AceASL, the sign language app for kids!</h3>
             </div>
             <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
@@ -88,7 +88,7 @@
                 I was also exploring machine learning, and deep learning, so I decided to use that knowledge for the project. The main idea was to design an app for children to learn and practice ASL. Educational apps are very common and effective, so I thought this could be a good way for kids to become comfortable with ASL letter hand signs,
                 without a parent nagging them, or correcting them repeatedly.
               </p>
-
+<img src="images/asl.png">
 
               <h4>Early Stages</h4>
               <p>
@@ -101,24 +101,20 @@
                 1. The machine learning component: I decided to use the 'Tensorflow for Poets 2' library. I chose this because it was an open source library that implemented the concept of 'transfer learning' very well. Transfer learning implies that a model has already been trained on another existing dataset. In this case,
                 it was trained on the ImageNet Large Visual Recognition Challenge dataset. The model can successfully differentiate between 1000 different image classes. The retraining was done using MobileNet, which is an efficient Convolutional Neural Network (CNN) that is used for computer vision applications. I used it for my project by retraining it with a dataset containing images of all the ASL letter hand signs.
 </p>
-<p>2. The computer vision component: For the next stage, I needed to collect images from the webcam, of a person actually trying out all the ASL signs. Using OpenCV, I saved these images from the webcam and then tested them with the trained network to see which ASL letter it was. The accuracy turned out to be pretty high - around 96% for most of the letters. For consistent results, I needed to ensure that the images were taken with a white background. </p>
+<p>2. The computer vision component: For the next stage, I needed to collect images from the webcam, of a person actually trying out all the ASL signs. Using OpenCV, I saved these images from the webcam and then tested them with the trained network to see which ASL letter it was. The accuracy turned out to be pretty high - around 96% for most of the letters. For consistent results, I needed to ensure that the images were taken with a plain background. Some of the images that I took while I was testing the retrained model for the letter 'O' are shown below. </p>
+<img src="images/Opic1.jpg">
+<img src="images/Opic2.jpg">
+<img src="images/Opic4.jpg">
+
+
 
 <p>3. The graphical user interface component: I implemented an interface using Tkinter. An image of a specific letter is displayed, and then the user has the option of recording their own hand signal. Then, they can test to see if they got it right (or not!). I tried to make my interface a little colorful and kid-friendly, but there are definitely some design limitations with Tkinter in terms of font options, and styling options, so I hope to improve the UI design in a future version.</p>
-
-              <p>
-              Skills involved in the project:
-              <ul>
-                <li> Python </li>
-                <li> OpenCV </li>
-                <li> Tensorflow </li>
-
-
-              </ul>
-
-</p>
-
-<iframe src="https://player.vimeo.com/video/246549829" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/246549829">Baxter Research Robot Threading/Unthreading a Lid</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<h4>Using the App</h4>
+<p>The video below shows the basic app design. The letter and the ASL hand sign for the letter Y are displayed in a Tkinter window. </p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ceY6tfU7yHQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p> After the user clicks on 'Click here to record your sign!', there is a pause (and the button remains pressed for a while), during which the user needs to try out the ASL sign themselves. In the image below, I am trying out the ASL sign for 'Y', after clicking the first button on the Tkinter screen.</p>
+<img src="images/Ytest.png">
+<p>Now the user can check if their sign was correct. The video below shows the labelling of the image as the letter 'Y', and the user gets a message informing them that their sign was right. </p>
 
             </div>
             <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
