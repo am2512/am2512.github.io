@@ -132,6 +132,25 @@ body .demo-blog {
   cursor: pointer;
 }
 
+.demo-blog .mdl-card__media11 {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+
 .demo-blog .mdl-card__media a,
 .demo-blog .mdl-card__title a {
   color: inherit;
@@ -259,6 +278,21 @@ body .demo-blog {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.demo-blog .something-else .mdl-card__media11 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .demo-blog .something-else > button {
   position: absolute;
   top: 0;
@@ -293,7 +327,7 @@ body .demo-blog {
   background-image: url('images/road.jpg');
 }
 .demo-blog .shopping .mdl-card__media {
-  background-image: url('images/shopping.jpg');
+  background-color:#a81d01;
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -377,6 +411,11 @@ body .demo-blog {
 
 .demo-blog--blogpost1 .demo-blog__posts > .mdl-card .mdl-card__media1 {
   background-image: url('images/449.jpg');
+  height: 280px;
+}
+
+.demo-blog--blogpost1 .demo-blog__posts > .mdl-card .mdl-card__media11 {
+  background-color: #a81d01;
   height: 280px;
 }
 .demo-blog--blogpost .comments {

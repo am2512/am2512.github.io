@@ -99,7 +99,7 @@
               <h4>Implementation</h4>
               <p>
                 1. The machine learning component: I decided to use the 'Tensorflow for Poets 2' library. I chose this because it was an open source library that implemented the concept of 'transfer learning' very well. Transfer learning implies that a model has already been trained on another existing dataset. In this case,
-                it was trained on the ImageNet Large Visual Recognition Challenge dataset. The model can successfully differentiate between 1000 different image classes. The retraining was done using MobileNet, which is an efficient Convolutional Neural Network (CNN) that is used for computer vision applications. I used it for my project by retraining it with a dataset containing images of all the ASL letter hand signs.
+                it was trained on the ImageNet Large Visual Recognition Challenge dataset. The model can successfully differentiate between 1000 different image classes. The retraining was done using MobileNet, which is an efficient Convolutional Neural Network (CNN) that is used for computer vision applications. The training set is 80% of the dataset, and 10% of the images are used for validation during training. The remaining 10% of the dataset is not used at all, so that it can be used later to accurately predict real-world behaviour. This prevents overfitting (which refers to unnecessary details of images being memorized, which is not really useful). I used the MobileNet model for my project by retraining it with a dataset containing images of all the ASL letter hand signs.
 </p>
 <p>2. The computer vision component: For the next stage, I needed to collect images from the webcam, of a person actually trying out all the ASL signs. Using OpenCV, I saved these images from the webcam and then tested them with the trained network to see which ASL letter it was. The accuracy turned out to be pretty high - around 96% for most of the letters. For consistent results, I needed to ensure that the images were taken with a plain background. Some of the images that I took while I was testing the retrained model for the letter 'O' are shown below. </p>
 <img src="images/Opic1.jpg">
@@ -109,15 +109,57 @@
 
 
 <p>3. The graphical user interface component: I implemented an interface using Tkinter. An image of a specific letter is displayed, and then the user has the option of recording their own hand signal. Then, they can test to see if they got it right (or not!). I tried to make my interface a little colorful and kid-friendly, but there are definitely some design limitations with Tkinter in terms of font options, and styling options, so I hope to improve the UI design in a future version.</p>
+
+
+  <h4>Step-by-step Setup and Essential Python Scripts</h4>
+              <p>
+                1. In the beginning, the trained model needs to be re-trained, with the dataset of all the ASL signs. The shell variables need to be set with the following command:
+                <pre><code>IMAGE_SIZE=224
+ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"</code></pre>
+
+              </p>
+            <p>  2. In the second step, a tool for monitoring the training process is launched:
+              <pre><code>tensorboard --logdir tf_files/training_summaries &</code></pre>
+            </p>
+            <p>
+3. Then, the final layer of the network is trained using the ASL dataset and the command below. The re-training process may take a while, as there are a lot of images.
+              <pre><code>python -m scripts.retrain \
+  --bottleneck_dir=tf_files/bottlenecks \
+  --how_many_training_steps=500 \
+  --model_dir=tf_files/models/ \
+  --summaries_dir=tf_files/training_summaries/"${ARCHITECTURE}" \
+  --output_graph=tf_files/retrained_graph.pb \
+  --output_labels=tf_files/retrained_labels.txt \
+  --architecture="${ARCHITECTURE}" \
+  --image_dir=tf_files/sign_photos</code></pre>
+            </p>
+
+
+<p>  4. The script 'gui3.py' located in the scripts folder is the one that starts up the GUI. The following command runs that python file:
+              <pre><code>python gui3.py</code></pre>
+            </p>
+
+            <p>  5. 'gui3.py' calls two other Python scripts, which are both located in the scripts folder: 'webcamtest.py' (which captures images and saves them to disk) and 'tester.py' (which classifies the saved image using the re-trained network).
+                        </p>
 <h4>Using the App</h4>
 <p>The video below shows the basic app design. The letter and the ASL hand sign for the letter Y are displayed in a Tkinter window. </p>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ceY6tfU7yHQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p> After the user clicks on 'Click here to record your sign!', there is a pause (and the button remains pressed for a while), during which the user needs to try out the ASL sign themselves. In the image below, I am trying out the ASL sign for 'Y', after clicking the first button on the Tkinter screen.</p>
 <img src="images/Ytest.png">
-<p>Now the user can check if their sign was correct. The image below shows the labelling of the image as the letter 'Y'</p> 
+<p>Now the user can check if their sign was correct. The image below shows the labelling of the image as the letter 'Y'</p>
 <img src="images/label.png">
 <p>The next image shows the message that informs the user that their sign was right. </p>
 <img src="images/success.png">
+
+<h4>Challenges and Future Scope</h4>
+              <p>
+                1. There is definitely a lot of scope for improvement. The GUI can be improved a lot, with more focus on making it kid-friendly.
+              </p>
+
+              <p>
+                2. I initially planned on using Blender to get accurate hand model, but editing the meshes proved to be very tricky, so for now I have used Paint 3D to generate 3D models of the hand signs. I hope to implement it soon with Blender, because that would allow me to provide a 360 degree view of the hand, in the form of a short video clip.
+              </p>
+
 <p>The GitHub repository for the project can be found <a href="https://github.com/am2512/signlanguage_project/tree/master">here</a>.</p>
 
 
