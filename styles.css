@@ -324,7 +324,7 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.jpg');
+  background-color: #b29982;
 }
 .demo-blog .shopping .mdl-card__media {
   background-color:#a81d01;
@@ -637,8 +637,8 @@ body .demo-blog {
   opacity: 0.46;
   border-radius: 2px;
 }
-.social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+.social-btn__linkedin {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_linkedin_black_24dp.png');
 }
 .social-btn__blogger {
   background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
