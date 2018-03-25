@@ -247,7 +247,7 @@ body .demo-blog {
           order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-color: #ed7e42;
+  background-image: url('images/asl1.jpg');
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
@@ -324,7 +324,7 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-color: #b29982;
+  background-image:url('images/road.jpg');
 }
 .demo-blog .shopping .mdl-card__media {
   background-color:#a81d01;
@@ -395,7 +395,7 @@ body .demo-blog {
 
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media3 {
-  background-color:#ed7e42;
+  background-image: url('images/asl1.jpg');
   height: 280px;
 }
 
@@ -437,6 +437,7 @@ body .demo-blog {
           align-items: center;
 }
 .demo-blog--blogpost .meta + .mdl-card__supporting-text {
+  
   border: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
