@@ -474,6 +474,15 @@ body .demo-blog {
   height: 280px;
 }
 
+.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media7 {
+  background-image: url('images/final_big.jpg');
+  height: 280px;
+}
+
+.demo-blog .on-the-road-again7 .mdl-card__media {
+  background-image:url('images/hci.jpg');
+}
+
 .demo-blog--blogpost1 .demo-blog__posts > .mdl-card .mdl-card__media11 {
   background-color: #a81d01;
   height: 280px;
