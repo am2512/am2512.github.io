@@ -1,22 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @am2512
-Sign out
-0
-0 0 am2512/am2512.github.io
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-am2512.github.io/post6.html
-8310147  on Mar 28
-@am2512 am2512 Updating newer posts
-     
-172 lines (142 sloc)  7.43 KB
-<!doctype html>
 <!--
   Material Design Lite
   Copyright 2015 Google Inc. All rights reserved.
@@ -36,7 +17,7 @@ am2512.github.io/post6.html
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>UI/UX Project</title>
+    <title>Final Project</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -101,27 +82,55 @@ am2512.github.io/post6.html
               <p>
                
 
-Development of Real-Time Virtual Bimanual Platter Lifting Software Program for Training of Individuals with Stroke
-Department of Physical Therapy and Human Movement Sciences, Northwestern University
+Project Title: Development of Real-Time Virtual Bimanual Platter Lifting Software Program for Training of Individuals with Stroke
+<br>
+Location: Department of Physical Therapy and Human Movement Sciences, Northwestern University
+<br>
 Advisors: Netta Gurari, Jules Dewald and Justin Drogos
 
              <h4>Background</h4> 
 
-There has been extensive research in the field of neurology, with a focus on stroke patients and their rehabilitation. One such study was undertaken by Netta Gurari, Jules Dewald, and Justin Drogos [Task Directionality Impacts the Ability of Individuals with Chronic Hemiparetic Stroke to Match Torques Between Arms]. In a study of ten subjects (6 of them were chronic hemiparetic stroke patients and 4 of them were without neurological impairment). Their primary finding was very interesting: during a torque matching trial, one arm was made to flex about the elbow joint and the other arm was made to match the reference torque. They found that when the patient needed to match the unaffected arm with the affected arm, there was not much of a difference. On the other hand, when the affected arm needed to be matched by the unaffected arm, there was a large torque matching error. 
+<p>There has been extensive research in the field of neurology, with a focus on stroke patients and their rehabilitation. One such study was undertaken by Netta Gurari, Jules Dewald, and Justin Drogos [Task Directionality Impacts the Ability of Individuals with Chronic Hemiparetic Stroke to Match Torques Between Arms]. In a study of ten subjects (6 of them were chronic hemiparetic stroke patients and 4 of them were without neurological impairment). Their primary finding was very interesting: during a torque matching trial, one arm was made to flex about the elbow joint and the other arm was made to match the reference torque. They found that when the patient needed to match the unaffected arm with the affected arm, there was not much of a difference. On the other hand, when the affected arm needed to be matched by the unaffected arm, there was a large torque matching error. </p>
 <br>
-Participating in Pilot Testing 
+<h4>Participating in Pilot Testing </h4>
 
-There is an existing system that needs upgrading, due to software issues. I participated in two rounds of pilot testing as the subject, while the PhD students in the Neuroimaging and Motor Control laboratory conducted the trials. Though the final project will include a bimanual task, the pilot testing was done with a single arm set-up. My right arm was set into a fiberglass cast. The first stage of the pilot testing involved measuring the maximum force and torque that my right arm was able to generate. These measurements were recorded using a force sensor. This maximum values for force and torque were set as references, and only 30% of those values was used for further trials to prevent possible fatigue. 
+<p>There is an existing system that needs upgrading, due to software issues. I participated in two rounds of pilot testing as the subject, while the PhD students in the Neuroimaging and Motor Control laboratory conducted the trials. Though the final project will include a bimanual task, the pilot testing was done with a single arm set-up. My right arm was set into a fiberglass cast. The first stage of the pilot testing involved measuring the maximum force and torque that my right arm was able to generate. These measurements were recorded using a force sensor. This maximum values for force and torque were set as references, and only 30% of those values was used for further trials to prevent possible fatigue. 
+
+	<img src="images/pilot.jpg">
 
 The second stage of the pilot testing involved using these values, along with a visual representation of force and torque, to encourage the patient to produce a particular force and torque repeatedly, over multiple trials. A horizontal line was used to represent force exerted by the arm along the z-axis, and an expanding/contracting circle was used to represent the increasing/decreasing torque about the right elbow. 
 
 
               </p>
 
-           
+           <h4>Hardware</h4>
               <p>
-             
+The existing system setup uses the JR3 force-torque sensor. Strain gauges sense the loads that are imposed on the sensor. The signals are amplified, and combined to become the analog representations of the force loads on the 3 axes. Axes on the sensor are oriented with X and Y axes of the sensor body, and Z axis is perpendicular to the X and Y axes. 
+
+Data acquisition cards are used to obtain the sensor information and ttransmit it to the main computer.
+
+
+
+
+
               </p>
+
+              <h4>Software</h4>
+            <p>
+The current software system consists of two sections - one section is the MATLAB and Simulink section, which uses all the force-torque sensor data and processes the signals with a control system. 
+<br>
+The second section is a Visual Studio component that is being used to represent the force and torque on screen, in the form of cicles and lines (as described in the Pilot Testing section). 
+
+            </p>
+
+
+            <h4>Proposed Work</h4>
+            <p>
+The MATLAB system software will be upgraded on a new computer, to the latest possible version. After completion of this task, a second JR3 will be incorporated into the system along with a corresponding DAQ card to set up the bimanual training task (as previous setup mentioned earlier used only one JR3 for the right hand only). 
+<br>
+An new and interactive visual interface will be designed to run using the output of the Simulink control system. The plan for this interface is to represent a task that is useful and relevant in a stroke patient's day-to-day life. An example of this is a task to lift a tray. 
+
+            </p>
 
            
 
@@ -183,16 +192,4 @@ The second stage of the pilot testing involved using these values, along with a 
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
+
