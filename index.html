@@ -1,241 +1,248 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
     <title>Ahalya's Portfolio</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-      <main class="mdl-layout__content">
-        <div class="demo-blog__posts mdl-grid">
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post5.html">AceASL, the sign language app for kids!</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Winter project.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
 
-              <div>
-
-                <span>March 23rd, 2018</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-
-
-              <img src="images/pic.JPG">
-
-
-            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600" >
-
-              <div>
-                <strong>Ahalya Mandana, MS (Robotics)<br> Northwestern University.</strong>
-              </div>
-
-
-            </div>
-            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-
-              <div>
-<span>
-                <a href="https://www.linkedin.com/in/ahalyamandana/">LinkedIn</a>  |  <a href="https://github.com/am2512">GitHub</a>  |  <a href="/resume/Resume_Ahalya_Mandana.pdf">Resume</a></span>
-                  <div class="mdl-mini-footer--right-section">
-
-                  </div>
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="mdl-card on-the-road-again7 mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post7.html">MSR Final Project</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Phase 1 of the Final Project for the MS in Robotics Project.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>May-June, 2018</span>
-              </div>
-            </div>
-          </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="https://www.linkedin.com/in/ahalyamandana">ahalya mandana</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           
-          
-          <div class="mdl-card on-the-road-again1 mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post6.html">UI/UX Design for a Behavior Tracking Application</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Project for EECS 330: Human Computer Interaction.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>March 16th, 2018</span>
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post4.html">Baxter the Laundry Assistant</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Final project for ME 495: Embedded Systems in Robotics.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>December 7th, 2017</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card on-the-road-again3 mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post3.html">Simulation of a Somersault on a Trampoline</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Final project for ME 314: Theory of Machine Dynamics.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>December 7th, 2017</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="mdl-card on-the-road-again2 mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post2.html">Simulation of a KUKA youBot in V-REP</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             Final project for ME 449: Robotic Manipulation.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>December 7th, 2017</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="post1.html">Object Tracking and Servo Motor Control</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-             MSR Hackathon.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-
-              <div>
-
-                <span>September 5th, 2017</span>
-              </div>
-            </div>
-          </div>
-          <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-            <a href="index.html" class="demo-nav__button">
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-              </button>
-              Newer
-            </a>
-            <div class="section-spacer"></div>
-            <a href="index.html" class="demo-nav__button">
-              Older
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-              </button>
-            </a>
-          </nav>
         </div>
-        <footer class="mdl-mini-footer">
-          ahalyamandana2018@u.northwestern.edu <br> +1-773-807-6306
-          <div class="mdl-mini-footer--left-section">
+      </nav>
+    </header>
 
-          </div>
-          <div class="mdl-mini-footer--right-section">
-            <button class="mdl-mini-footer--social-btn social-btn__share">
+    <main role="main">
 
-              <span class="visuallyhidden">share</span>
-            </button>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="images/bg.JPG" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>electrical & electronics engineering.</h1>
+                <p>Starting off with an undergraduate background in electrical & electronics engineering, I joined the MS in Robotics program at Northwestern University in 2017.</p>
+               
+              </div>
+            </div>
           </div>
-        </footer>
-      </main>
-      <div class="mdl-layout__obfuscator"></div>
-    </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+          <div class="carousel-item">
+            <img class="second-slide" src="images/bg.JPG" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>mechanical engineering.</h1>
+                <p>At Northwestern, with coursework like Theory of Machine Dynamics, Embedded Systems in Robotics, and Robotic Manipulation, I was able to strengthen my mechanical engineering knowledge.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="images/bg.JPG" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>computer science.</h1>
+                <p>To be well-prepared for the world of machine learning and artificial intelligence, I took computer science courses like Introduction to Artificial Intelligence, Machine learning, and Reinforcement learning.</p>
+                
+              </div>
+            </div>
+          </div>
+           <div class="carousel-item">
+            <img class="third-slide" src="images/bg.JPG" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>biomedical engineering.</h1>
+                <p>Since the course encourages a multidisciplinary approach, I took a course called Control of Human Limbs and their Artificial Replacements to understand prosthetics better.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+      <!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+<!-- 
+        <hr class="featurette-divider"> -->
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">MSR Final Project. <br><span class="text-muted">Phase one.</span></h2>
+            <p class="lead">The first stage of the MSR final project at the Neuroimaging and Motor Control Laboratory, Department of Physical Therapy and Human Movement Sciences at Northwestern's Feinberg School of Medicine.</p>
+            <p><a class="btn btn-secondary" href="post_7.html" role="button">More about this project &raquo;</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/pilot.jpg">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Day Zero Predictor. <br><span class="text-muted">Time is running out.</span></h2>
+            <p class="lead">A project completed as part of the EECS:349 Machine Learning course to spread awareness about rapid depletion of water resources by predicting Day Zero for a country. Day Zero refers to a situation of acute water shortage. </p>
+            <p><a class="btn btn-secondary" href="https://aamirhatim.github.io/day_zero_predictor/" role="button">Project Website &raquo;</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="images/world.jpg">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">AceASL, the Sign Language App for Kids. <br> <span class="text-muted">Winter Project.</span></h2>
+            <p class="lead">A project to help children learn American Sign Language, using TensorFlow.</p>
+            <p><a class="btn btn-secondary" href="post_6.html" role="button">More about this project &raquo;</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/success1.jpg">
+          </div>
+        </div>
+
+         <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">UI/UX Design for a Behavior Tracking Application. <br><span class="text-muted">Human Computer Interaction project.</span></h2>
+            <p class="lead">Design of an application to track behavior and manage stress, as part of the EECS:330 Human Computer Interaction final project.</p>
+            <p><a class="btn btn-secondary" href="post_5.html" role="button">More about this project &raquo;</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="images/graph.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+         <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Baxter the Laundry Assistant. <br> <span class="text-muted">Embedded Systems in Robotics project.</span></h2>
+            <p class="lead">A project involving the Baxter research robot from Rethink Robotics.</p>
+            <p><a class="btn btn-secondary" href="post_4.html" role="button">More about this project &raquo;</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/baxter.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Simulation of a Somersault on a Trampoline. <br><span class="text-muted">Theory of Machine Dynamics project.</span></h2>
+            <p class="lead">A simulation project to model the motion of a somersaulter on a trampoline.</p>
+            <p><a class="btn btn-secondary" href="post_3.html" role="button">More about this project &raquo;</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="images/314_1.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Simulation of a KUKA youBot in V-REP. <br> <span class="text-muted">Robotic Manipulation project.</span></h2>
+            <p><a class="btn btn-secondary" href="post_2.html" role="button">Read more &raquo;</a></p>
+            
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/kukabot.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Object Tracking and Servo Motor Control. <br><span class="text-muted">MSR Hackathon.</span></h2>
+             <p><a class="btn btn-secondary" href="post_1.html" role="button">Read more &raquo;</a></p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="images/hackathon.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
+
+
+
+
+        <hr class="featurette-divider">
+
+          <div class="col-md-13">
+          
+            <img class="rounded-circle" src="images/pic.JPG" alt="Generic placeholder image" width="200" height="200" align="center">
+            <h2>About me</h2>
+            <p>A current student in the MS in Robotics program at Northwestern University. I will be graduating in December 2018 and I'm actively looking for full-time opportunities in robotics, human computer interaction, machine learning, and artificial intelligence. </p>
+            <p><a class="btn btn-secondary" href=/resume/Resume_Ahalya_Mandana.pdf" role="button">View Resume &raquo;</a></p><p><a class="btn btn-secondary" href="https://www.linkedin.com/in/ahalyamandana/" role="button">LinkedIn Profile &raquo;</a></p>
+          <!-- /.col-lg-4 -->
+          
+        </div>
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
   </body>
 </html>

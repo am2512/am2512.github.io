@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>MSR Final Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="https://www.linkedin.com/in/ahalyamandana">ahalya mandana</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>MSR Final Project.</h1>
+                <p>Phase one.</p>
+               
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+      <!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+<!-- 
+        <hr class="featurette-divider"> -->
+
+        <div class="row featurette">
+          <div class="col-md-11">
+            <h2 class="featurette-heading">Development of Real-Time Virtual Bimanual Platter Lifting Software Program for Training of Individuals with Stroke<br><span class="text-muted"></span></h2>
+            <p class="lead">Advisors: Dr. Netta Gurari, Dr. Jules Dewald and Dr. Justin Drogos</p>
+            <h4>Background</h4>
+            <p>There has been extensive research in the field of neurology, with a focus on stroke patients and their rehabilitation. One such study was undertaken by Drs. Netta Gurari, Jules Dewald, and Justin Drogos ["Task Directionality Impacts the Ability of Individuals with Chronic Hemiparetic Stroke to Match Torques Between Arms", International Conference on Rehabilitation Robotics (ICORR), IEEE, 2017]. In a study of ten subjects (6 of them were chronic hemiparetic stroke patients and 4 of them were without neurological impairment). Their primary finding was very interesting: during a torque matching trial, one arm was made to flex about the elbow joint and the other arm was made to match the reference torque. They found that when the patient needed to match the unaffected arm with the affected arm, there was not much of a difference. On the other hand, when the affected arm needed to be matched by the unaffected arm, there was a large torque matching error. The system that is described below is being used by the authors to conduct more research in this area, and to provide training to stroke patients. </p>
+
+
+ <h4>Hardware</h4>
+              <p>
+The existing system setup uses the JR3 force-torque sensor. Strain gauges sense the loads that are imposed on the sensor. The signals are amplified, and combined to become the analog representations of the force loads on the 3 axes. Axes on the sensor are oriented with X and Y axes of the sensor body, and Z axis is perpendicular to the X and Y axes. 
+
+Data acquisition cards are used to obtain the sensor information and transmit it to the main computer.
+
+
+
+
+
+              </p>
+
+              <h4>Software</h4>
+            <p>
+The current software system consists of two sections - one section is the MATLAB and Simulink section, which uses all the force-torque sensor data and processes the signals with a control system. 
+<br>
+The second section is a Visual Studio component that is being used to represent the force and torque on screen, in the form of circles and lines (as described in the Pilot Testing section). 
+
+            </p>
+
+<h4>Participating in Pilot Testing </h4>
+
+<p>I was given an opportunity by Dr. Gurari to participate in the pilot testing as a 'subject', which was a really informative experience. I participated in two rounds of pilot testing as the subject, while the PhD students in the Neuroimaging and Motor Control laboratory conducted the trials. Though the final project will include a bimanual task, the pilot testing was done with a single arm set-up. My right arm was set into a fiberglass cast. The first stage of the pilot testing involved measuring the maximum force and torque that my right arm was able to generate. These measurements were recorded using a force sensor. This maximum values for force and torque were set as references, and only 30% of those values was used for further trials to prevent possible fatigue. 
+<br><br>
+  
+
+The second stage of the pilot testing involved using these values, along with a visual representation of force and torque, to encourage the patient to reproduce a particular force and torque over multiple trials. A horizontal line was used to represent force exerted by the arm along the z-axis, and an expanding/contracting circle was used to represent the increasing/decreasing torque about the right elbow. I had to match a certain value of force along the z-axis, and a torque about the z-axis, to complete the task successfully. 
+
+
+              </p>
+
+          
+
+            <h4>Proposed Work</h4>
+            <p>
+The MATLAB system software will be upgraded on a new computer, to the latest possible version. After completion of this step, a second JR3 sensor will be incorporated into the system along with a corresponding DAQ card to set up the bimanual training task (as previous setup mentioned earlier used only one JR3 for the right hand only). 
+<br><br>
+An new and interactive visual interface will be designed to run using the output of the MATLAB/Simulink control system. The plan for this interface is to represent a task that is useful and relevant in a stroke patient's day-to-day life. An example of this is a task to train a patient to 'lift' a virtual tray that has cups placed on it. Both of the patient's arms will be strapped to the device, and sensor data will be continuously recorded (for an example, see Figure 1 below). <br><br>
+<img src="images/pilot1.jpg" >
+<br><br>
+The tray and cups will be simulated and will use real-time feedback from the control loop to give the patient an accurate feedback while the task is being performed.  
+
+            </p>
+            
+          </div>
+          <!-- <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="images/pilot.jpg">
+          </div> -->
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+      
+
+          
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
